@@ -1,4 +1,3 @@
 # Scraping Rap Fr Lyrics in Genius With Scrapy:
-Ce projet à etait developper dans un cadre personnel afin de creer un corpus des textes des chansons du Rap français.
-J'ai d'abord creer une Spider pour recuper les noms des artistes du Rap Fr sur Wikipedia,puis j'ai utilisé l'API de Genius pour recuperer 
-les URL et differents informations(ALBUM,Date de Sortie...) des lyrics de chaque artistes,et j'ai scraper chaque URL pour recuperer les paroles.
+Ce projet à etait developper dans un cadre personnel afin de creer un corpus de textes de chansons du Rap français.
+Pour cela,j'ai d'abord creer une Spider (**wikipedia.py**) pour recuperer les noms des artistes du Rap Fr sur Wikipedia(https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Rappeur_fran%C3%A7ais),puis j'ai creer un autre Spider (**api.py**) pour recuperer les URL et differents informations(ALBUM,Date de Sortie...) des lyrics de chaque artistes sur le site **Genius**(www.genius.com) en utilisant leurs API(https://genius.com/api-clients),et enfin j'ai creer un Spider (**lyrics.py**) pour recuperer les paroles.
